@@ -1,0 +1,62 @@
+    1  git --version
+    2  sudo yum install git -y
+    3  git --version
+    4  git clone https://github.com/tacettinkot/linux-zone.git
+    5  ls
+    6  cd linux-zone/
+    7  mkdir pkgmngr
+    8  cd pkgmngr/
+    9  nano letter1.txt
+   10  ls
+   11  yum search kate
+   12  yum search all kate
+   13  yum update
+   14  sudo yum update
+   15  sudo yum installed
+   16  sudo yum installed list
+   17  sudo yum list installed
+   18  sudo yum list installed | grep http*
+   19  sudo yum list installed | grep "http*"
+   20  sudo find / "http*"
+   21  sudo find / http*
+   22  sudo yum install httpd
+   23  sudo yum list installed | grep httpd*
+   24  sudo yum list httpd
+   25  sudo yum autoremove httpd
+   26  yum httpd -- version
+   27  git --version
+   28  sudo yum install git
+   29  find / git | grep git
+   30  sudo find / git/ 
+   31  find git/ /
+   32  clear
+   33  sudo yum autoremove git
+   34  sudo yum install git -y
+   35  sudo yum info git
+   36  sudo yum list
+   37  sudo yum list git
+   38  sudo yum --showduplicates list git
+   39  git --version
+   40  sudo yum autoremove git =y
+   41  sudo yum --showduplicates list git
+   42  sudo yum install git-2.14.5-1.amzn2 -y
+   43  git --version
+   44  sudo yum --showduplicates list git
+   45  sudo yum update git-2.23.1-0.amzn2.0.2 -y
+   46  sudo yum --showduplicates list git
+   47  git --version
+   48  sudo yum install git-2.23.1-1.amzn2.0.1 -y
+   49  git --version
+   50  sudo yum install git-2.17.2-2.amzn2 -y
+   51  sudo yum update git-2.17.2-2.amzn2 -y
+   52  git --version
+   53  git autoremove git -y
+   54  sudo yum autoremove git -y
+   55  sudo yum install git-2.17.2-2.amzn2 -y
+   56  git --version
+   57  sudo yum autoremove git -y
+   58  sudo yum install git-2.17.2-2.amzn2 -y
+   59  sudo yum update git -y
+   60  git --version
+   61  ls
+   62  history >> letter1.txt 
