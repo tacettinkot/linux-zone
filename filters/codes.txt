@@ -1,0 +1,147 @@
+    1  clear
+    2  ls
+    3  pwd
+    4  mkdir filters
+    5  cd filters/
+    6  vim days.txt
+    7  cat days.txt 
+    8  cat days.txt | cat | cat
+   10  cat count.txt 
+   11  cat days.txt count.txt 
+   12  tac count.txt | tee temp.txt | tac
+   13  ls
+   14  cat temp.txt 
+   15  cat > tennis.txt
+   16  cat tennis.txt 
+   17  cat tennis.txt | grep Williams
+   18  cat tennis.txt | grep us
+   25  cut -d' '  -f3 tennis.txt 
+   27  man cut
+   29  cut -d' ' -f3 tennis.txt 
+   30  cut -d' ' -f1 tennis.txt 
+   31  cut -d' ' -f2 tennis.txt 
+   34  cat /etc/passwd
+   35  cat /etc/passwd | cut -d':' -f1
+   36  cut -d':' -f1 /etc/passwd | wc -l
+   37  cut -d':' /etc/passwd | wc -l
+   38  man cut
+   42  tr.txt
+   43  touch tr.txt
+   44  ls
+   45  cat << EOF > tr.txt 
+Clarusway:Road to reinvent yourself.
+
+   46  cat tr.txt 
+   47  tr 'aer' 'QAZ' tr.txt 
+   48  man tr
+   49  cat tr.txt | tr 'aer' 'QAZ'
+   50  cat count.txt | tr '\n' ' '
+   51  man tr
+   52  cat tr.txt | tr -d 'aeiou'
+   53  man tr
+   56  cat tr.txt | tr [a-z] [A-Z]
+   57  wc tr.txt 
+   58  wc count.txt 
+   59  wc -l /etc/passwd
+   60  man wc
+   61  wc -wm count.txt 
+   62  nano count.txt 
+   63  wc -wm count.txt 
+   64  wc -m count.txt 
+   65  cat count.txt 
+   66  wc -m[a-z] count.txt 
+   67  wc -m [a-z] count.txt 
+   68  cat << EOF > marks.txt
+aeron-9
+albert-9
+james-9
+john-10
+oliver-7
+tom-7
+victor-10
+walter-8
+EOF
+
+   69  cat marks.txt 
+   70  sort marks.txt 
+   71  sort -r marks.txt 
+   72  man sort
+   73  sort -n marks.txt 
+   74  cat << EOF > trainees.txt
+john
+james
+aeron
+oliver
+walter
+albert
+james
+john
+travis
+mike
+aeron
+thomas
+daniel
+john
+aeron
+oliver
+mike
+john
+EOF
+
+   75  man uniq
+   76  uniq -n trainees.txt 
+   77  man uniq
+   78  cat trainees.txt | uniq -n
+   79  cat trainees.txt | uniq
+   80  cat trainees.txt | uniq -nd
+   81  uniq --help
+   82  uniq -n trainees.txt ex.txt
+   83  uniq -n trainees.txt > ex.txt
+   84  clear
+   85  sort trainees.txt | uniq
+   86  cat << EOF > file1.txt
+Aeron
+Bill
+James
+John
+Oliver
+Walter
+EOF
+
+   87  cat << EOF > file2.txt
+Guile
+James
+John
+Raymond
+EOF
+
+   88  comm file1.txt file2.txt 
+   89  cat << EOF > countries.csv
+Country,Capital,Continent
+USA,Washington,North America
+France,Paris,Europe
+Canada,Ottawa,North America
+Germany,Berlin,Europe
+EOF
+
+   90  cat countries.csv 
+   91  cut -d',' f3 countries.csv | sed '1d' | sort | uniq | cat > continent.txt
+   92  cut -d',' -f3 countries.csv | sed '1d' | sort | uniq | cat > continent.txt
+   93  ls
+   94  cat continent.txt 
+   95  cut -d',' -f3 countries.csv | sed '1d' | sort | uniq | echo > continent.txt
+   96  ls
+   97  echo continent.txt 
+   98  cat continent.txt 
+   99  cut -d',' -f3 countries.csv | sed '1d' | sort | uniq | cat continent.txt | cat
+  100  cat continent.txt 
+  101  cut -d',' -f3 countries.csv | sed '1d' | sort | uniq | cat continent.txt
+  102  cat continent.txt 
+  103  cut -d',' -f3 countries.csv | sed '1d' | sort | uniq | cat > continent.txt | cat
+  104  cat continent.txt 
+  105  cut -d',' -f3 countries.csv | sed '1d' | sort | uniq | tee continent.txt | cat
+       cat continent.txt
+  111  cut -d',' -f3 countries.csv | tail -n +2 | sort | uniq | tee continent.txt | cat
+       cat continent.txt 
+  112  cut -d',' -f3 countries.csv | awk 'NR>1' | sort | uniq | tee continent.txt | cat
+  113  history > codes.txt 
